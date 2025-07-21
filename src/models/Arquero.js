@@ -1,5 +1,6 @@
 // src/models/Arquero.js
 const Personaje = require('./Personaje'); // Importa la clase base Personaje
+const chalk = require('chalk'); 
 
 /**
  * Clase Arquero, hereda de Personaje.
