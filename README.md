@@ -1,12 +1,12 @@
 # Simulador_de_Batallas_RPG-
 
-# ⚔️ RPG Battle Simulator por Consola ⚔️
+#  RPG Battle Simulator por Consola 
 
 Este proyecto es un simulador de batallas RPG (Role-Playing Game) interactivo para consola, desarrollado con Node.js. El objetivo principal es aplicar los principios de la Programación Orientada a Objetos (POO) y los principios SOLID para construir un sistema de juego robusto, modular y fácil de mantener y extender.
 
 ---
 
-## 🎯 Objetivo del Proyecto
+##  Objetivo del Proyecto
 
 Desarrollar una aplicación de consola que simule batallas por turnos entre personajes con diferentes clases (guerrero, mago, arquero, etc.), incluyendo gestión de personajes, inventario básico y enemigos controlados por una IA simple. El proyecto enfatiza el uso de:
 
@@ -18,7 +18,7 @@ Desarrollar una aplicación de consola que simule batallas por turnos entre pers
 
 ---
 
-## 🚀 Funcionalidades Actuales (Progreso hasta el Paso 3)
+##  Funcionalidades Actuales (Progreso hasta el Paso 3)
  implementado una base sólida para el sistema de personajes y la estructura del proyecto:
 
 * **Estructura de Carpetas:** Organización del código en directorios lógicos (`src/models`, `src/services`, `src/interfaces`, `src/utils`, `src/config`, `src/data`) para promover el Principio de Responsabilidad Única (SRP).
@@ -40,7 +40,7 @@ Desarrollar una aplicación de consola que simule batallas por turnos entre pers
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠 Tecnologías Utilizadas
 
 * **Node.js**
 * **JavaScript (ES6+)**
@@ -55,7 +55,7 @@ Desarrollar una aplicación de consola que simule batallas por turnos entre pers
 
 ---
 
-## 📦 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ¡Absolutamente! Es una excelente idea ir completando el README.md a medida que avanzamos. Así, tendrás la documentación al día y clara para ti y tu equipo.
 
@@ -64,13 +64,13 @@ Aquí tienes una propuesta para el contenido de tu README.md con lo que hemos he
 README.md Propuesta
 Markdown
 
-# ⚔️ RPG Battle Simulator por Consola ⚔️
+# ⚔ RPG Battle Simulator por Consola ⚔️
 
 Este proyecto es un simulador de batallas RPG (Role-Playing Game) interactivo para consola, desarrollado con Node.js. El objetivo principal es aplicar los principios de la Programación Orientada a Objetos (POO) y los principios SOLID para construir un sistema de juego robusto, modular y fácil de mantener y extender.
 
 ---
 
-## 🎯 Objetivo del Proyecto
+##  Objetivo del Proyecto
 
 Desarrollar una aplicación de consola que simule batallas por turnos entre personajes con diferentes clases (guerrero, mago, arquero, etc.), incluyendo gestión de personajes, inventario básico y enemigos controlados por una IA simple. El proyecto enfatiza el uso de:
 
@@ -82,7 +82,7 @@ Desarrollar una aplicación de consola que simule batallas por turnos entre pers
 
 ---
 
-## 🚀 Funcionalidades Actuales (Progreso hasta el Paso 3)
+##  Funcionalidades Actuales (Progreso hasta el Paso 3)
 
 Hasta ahora, hemos implementado una base sólida para el sistema de personajes y la estructura del proyecto:
 
@@ -105,7 +105,7 @@ Hasta ahora, hemos implementado una base sólida para el sistema de personajes y
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 * **Node.js**
 * **JavaScript (ES6+)**
@@ -118,56 +118,7 @@ Hasta ahora, hemos implementado una base sólida para el sistema de personajes y
 * `uuid` (próximamente): Para generar IDs únicos (cuando implementemos la gestión completa de personajes).
 * `lowdb` o `fs` (opcional, para guardar/cargar progreso): Para la persistencia de datos.
 
----
-
-## 📦 Estructura del Proyecto
-
-Simulador_de_Batallas_RPG/
-├── node_modules/           # Módulos de Node.js instalados por npm (ignorados por Git)
-├── src/                    # Código fuente de la aplicación
-│   ├── app.js              # Punto de entrada principal y orquestador
-│   │
-│   ├── config/             # Archivos de configuración del juego
-│   │   └── gameConfig.js
-│   │
-│   ├── models/             # Clases que representan las entidades del juego
-│   │   ├── Personaje.js    # Clase base
-│   │   ├── Guerrero.js
-│   │   ├── Mago.js
-│   │   ├── Arquero.js
-│   │   ├── Enemigo.js      # (Pendiente de implementación)
-│   │   ├── Item.js         # (Pendiente de implementación)
-│   │   ├── Arma.js         # (Pendiente de implementación)
-│   │   ├── Pocion.js       # (Pendiente de implementación)
-│   │   └── Armadura.js     # (Pendiente de implementación)
-│   │
-│   ├── interfaces/         # Definiciones conceptuales de interfaces (abstracciones para SOLID)
-│   │   ├── IAtacante.js
-│   │   ├── ICurable.js
-│   │   ├── INotificador.js
-│   │   └── IUsaMagia.js
-│   │
-│   ├── services/           # Clases con lógica de negocio y coordinación
-│   │   ├── GestorBatalla.js    # (Pendiente de implementación)
-│   │   ├── GestorInventario.js # (Pendiente de implementación)
-│   │   ├── GestorPersonajes.js # (Pendiente de implementación)
-│   │   ├── NotificadorConsola.js # Implementación concreta de INotificador
-│   │   ├── MenuPrincipal.js    # (Pendiente de implementación)
-│   │   └── GeneradorEnemigos.js # (Pendiente de implementación)
-│   │
-│   ├── utils/              # Funciones auxiliares y constantes
-│   │   ├── constants.js    # (Pendiente de implementación)
-│   │   └── helpers.js      # (Pendiente de implementación)
-│   │
-│   └── data/               # Archivos para persistencia de datos (opcional)
-│       └── characters.json # (Pendiente de implementación)
-│
-├── .gitignore              # Archivo para ignorar en control de versiones (ej. node_modules/)
-├── package.json            # Metadatos del proyecto y dependencias
-├── package-lock.json       # Estado exacto de las dependencias
-└── README.md               # Este archivo de documentación
-
-## ⚙️ Cómo Ejecutar el Proyecto
+##  Cómo Ejecutar el Proyecto
 
 Para poner en marcha este simulador, sigue los siguientes pasos:
 
